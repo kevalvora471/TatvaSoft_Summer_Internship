@@ -1,0 +1,26 @@
+<div class="main">
+
+    <div class="container">
+
+        <h2>Student Form</h2>
+
+        <p>Welcome, {{studentName}}!</p>
+
+        <input [(ngModel)]="studentName" [placeholder]="'Enter Student Name'"
+            [ngStyle]="{borderColor: studentName ?'green':'red'}">
+
+        <p [ngClass]="{'valid-name':studentName.length>3, 'invalid-name': studentName.length<=3}">Name must be more than
+            3
+            characters.</p>
+
+        <button (click)="submitForm()">Submit</button>
+
+        <p *ngIf="submitted">Student submitted successfully!</p>
+
+        <ul>
+            @for (student of students; track $index) {
+            <li>{{student}}</li>
+            }
+        </ul>
+    </div>
+</div>

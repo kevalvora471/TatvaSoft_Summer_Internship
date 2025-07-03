@@ -1,0 +1,26 @@
+.valid-name{
+    color: green;
+}
+
+.invalid-name{
+    color: red;
+}
+
+.container {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main {
+    display: flex;
+    margin: 60px 200px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
